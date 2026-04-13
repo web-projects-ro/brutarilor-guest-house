@@ -899,11 +899,12 @@ footer {
 }
 /* ===================== ADAUGĂRI PENTRU 4 CAMERE ȘI TAB-URI RECENZII ===================== */
 
-/* 1. Ajustare grilă camere (4 pe desktop, 2 pe tabletă, 1 pe mobil) */
+/* 1. Ajustare grilă camere (2 centrate pe desktop, 2 pe tabletă, 1 pe mobil) */
 @media (min-width: 1025px) {
   .rooms-grid {
-    grid-template-columns: repeat(3, 1fr) !important;
-    max-width: 1080px;
+    grid-template-columns: repeat(2, minmax(320px, 420px)) !important;
+    justify-content: center;
+    max-width: 980px;
     margin-left: auto;
     margin-right: auto;
   }
